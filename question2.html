@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Dashboard</title>
+    <link rel="stylesheet" href="question2.css">
+</head>
+<body>
+
+    <!-- Login Panel -->
+    <div id="login-section">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required><br><br>
+            <input type="password" id="password" placeholder="Password" required><br><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <!-- Dashboard (hidden by default) -->
+    <div id="dashboard-section" style="display: none;">
+        <h2>Welcome, Shikhar</h2>
+        
+        <!-- User Details -->
+        <div id="user-details">
+            <p>Username: Shikhar</p>
+            <p>Role: Developer</p>
+        </div>
+        
+        <!-- Sort Users Dropdown -->
+        <select id="sort-users">
+            <option value="default">Sort By</option>
+            <option value="alphabetical">Alphabetical</option>
+        </select>
+
+        <!-- User List (Top 10 GitHub Users) -->
+        <ul id="user-list">
+            <!-- User list items will be populated here -->
+        </ul>
+
+        <!-- Logout Button -->
+        <button id="logout-button">Logout</button>
+    </div>
+
+    <script src="question2.js"></script>
+</body>
+</html>
